@@ -29,14 +29,8 @@ d$DateTime <- dateTime
 
 # plot to png
 png('plot2.png', width=480, height=480, bg='transparent')
-dev.set(1)
 with(d, {
     plot(DateTime, Global_active_power, type='l', xlab='', ylab="Global active power")
 })
 dev.off()
 
-# plot to png
-dev.set(1)
-with(d, {
-    plot(DateTime, Global_active_power, type='l', xlab='', ylab="Global active power")
-})
